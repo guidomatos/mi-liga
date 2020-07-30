@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     
-    <b-button>Mi botón</b-button>
+    
 
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
