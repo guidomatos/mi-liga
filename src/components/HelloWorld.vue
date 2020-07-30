@@ -1,9 +1,28 @@
 <template>
-<div>
-<b-button variant="success" size="lg">Mi botón</b-button>
-<b-button :pressed="false" variant="warning">Mi botón</b-button>
-<b-button variant="primary">Mi botón</b-button>
-</div>
+
+  <div>
+
+    <b-container fluid>
+      <b-row>
+        <b-col>
+        <b-button variant="success" size="lg">Mi botón</b-button>
+        </b-col>
+        <b-col>
+          <b-button :pressed="false" variant="warning">Mi botón</b-button>
+        </b-col>
+        <b-col>
+          <b-button variant="primary">Mi botón</b-button>
+        </b-col>
+      </b-row>
+      <b-row>
+          <b-col>Grid System</b-col>
+      </b-row>
+    </b-container>
+
+    
+    
+    
+  </div>
 </template>
 
 <script>
