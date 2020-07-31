@@ -74,6 +74,7 @@ export default {
         onSubmit(evt){
             evt.preventDefault();
             alert(JSON.stringify(this.form));
+            this.$emit("new_team", this.form);
             this.$refs.myModal.hide();
         }
     }

@@ -17,7 +17,7 @@
       </b-row>
     </b-container>
 
-    <equipo-frm></equipo-frm>
+    <equipo-frm @new_team="onNewTeam"></equipo-frm>
 
   </div>
 </template>
@@ -67,6 +67,11 @@ export default {
           jugadores: [{ jugador: "1" }, { jugador: "1" }]
         }
       ]
+    }
+  },
+  methods: {
+    onNewTeam(equipo) {
+      this.equipos.push(Object.assign({}, equipo));
     }
   }
 }
